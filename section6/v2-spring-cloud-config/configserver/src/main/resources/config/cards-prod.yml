@@ -3,7 +3,7 @@
 build:
   version: 3.0
 
-accounts:
+cards:
   message: "Welcome to Zeroo8 prod section"
   contactDetails:
     name: Mayesha

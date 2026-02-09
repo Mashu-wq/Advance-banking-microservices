@@ -1,6 +1,10 @@
 server:
   port: 9000
 spring:
+  application:
+    name: "cards"
+  profiles:
+    active: "prod"
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -16,21 +20,19 @@ spring:
     show-sql: true
 
   config:
-    import:
-      - application_qa.yml
-      - application_prod.yml
-  profiles:
-    active:
-      - qa
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
-build:
-  version: 1.0
+management:
+  endpoint:
+    busrefresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh,busrefresh
 
-cards:
-  message: "Welcome to Zeroo8 default section"
-  contactDetails:
-    name: Mayesha
-    email: reactive.sys@gmail.com
-  onCallSupport:
-    - "(453)3435"
-    - "(444)3456"
