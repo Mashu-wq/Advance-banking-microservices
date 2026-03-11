@@ -1,0 +1,11 @@
+build:
+  version: 3.0
+
+accounts:
+  message: "Welcome to Zeroo8 QA section"
+  contactDetails:
+    name: Mayesha
+    email: reactive.sys@gmail.com
+  onCallSupport:
+    -(453)3435
+    -(444)3456

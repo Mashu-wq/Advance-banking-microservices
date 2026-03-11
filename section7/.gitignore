@@ -1,0 +1,76 @@
+# =========================
+# Java / Spring Boot
+# =========================
+target/
+build/
+*.class
+
+# Maven
+.mvn/timing.properties
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+
+# Logs
+*.log
+logs/
+
+# =========================
+# IDE Files
+# =========================
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.local
+.env.*
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+*.tmp
+*.swp
+
+# =========================
+# Node (if frontend added later)
+# =========================
+node_modules/
+
+# =========================
+# Mac / Linux
+# =========================
+*.pid
+*.seed
+*.pid.lock

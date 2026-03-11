@@ -1,0 +1,13 @@
+
+
+build:
+  version: 1.0
+
+cards:
+  message: "Welcome to Zeroo8 default section"
+  contactDetails:
+    name: Mayesha
+    email: reactive.sys@gmail.com
+  onCallSupport:
+    - "(453)3435"
+    - "(444)3456"
